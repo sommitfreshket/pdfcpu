@@ -22,11 +22,11 @@ import (
 	"io"
 	"strings"
 
-	"github.com/pdfcpu/pdfcpu/pkg/filter"
-	"github.com/pdfcpu/pdfcpu/pkg/log"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/model"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/types"
 	"github.com/pkg/errors"
+	"github.com/sommitfreshket/pdfcpu/pkg/filter"
+	"github.com/sommitfreshket/pdfcpu/pkg/log"
+	"github.com/sommitfreshket/pdfcpu/pkg/pdfcpu/model"
+	"github.com/sommitfreshket/pdfcpu/pkg/pdfcpu/types"
 )
 
 // ImageObjNrs returns all image dict objNrs for pageNr.

@@ -33,10 +33,10 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/pdfcpu/pdfcpu/pkg/log"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/model"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/types"
 	"github.com/pkg/errors"
+	"github.com/sommitfreshket/pdfcpu/pkg/log"
+	"github.com/sommitfreshket/pdfcpu/pkg/pdfcpu/model"
+	"github.com/sommitfreshket/pdfcpu/pkg/pdfcpu/types"
 )
 
 var (
@@ -1087,7 +1087,7 @@ func decryptBytes(b []byte, objNr, genNr int, encKey []byte, needAES bool, r int
 // decryptString decrypts s using RC4 or AES.
 func decryptString(s string, objNr, genNr int, key []byte, needAES bool, r int) ([]byte, error) {
 
-	bb, err := types.Unescape(s, true)
+	bb, err := types.Unescape(s)
 	if err != nil {
 		return nil, err
 	}

@@ -22,9 +22,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pdfcpu/pdfcpu/pkg/api"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/form"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/model"
+	"github.com/sommitfreshket/pdfcpu/pkg/api"
+	"github.com/sommitfreshket/pdfcpu/pkg/pdfcpu/form"
+	"github.com/sommitfreshket/pdfcpu/pkg/pdfcpu/model"
 )
 
 /**************************************************************

@@ -27,11 +27,11 @@ import (
 	"strings"
 
 	"github.com/hhrutter/tiff"
-	"github.com/pdfcpu/pdfcpu/pkg/filter"
-	"github.com/pdfcpu/pdfcpu/pkg/log"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/model"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/types"
 	"github.com/pkg/errors"
+	"github.com/sommitfreshket/pdfcpu/pkg/filter"
+	"github.com/sommitfreshket/pdfcpu/pkg/log"
+	"github.com/sommitfreshket/pdfcpu/pkg/pdfcpu/model"
+	"github.com/sommitfreshket/pdfcpu/pkg/pdfcpu/types"
 )
 
 // Errors to be identified.
@@ -127,7 +127,7 @@ func colorLookupTable(xRefTable *model.XRefTable, o types.Object) ([]byte, error
 	switch o := o.(type) {
 
 	case types.StringLiteral:
-		return types.Unescape(o.Value(), false)
+		return types.Unescape(o.Value())
 
 	case types.HexLiteral:
 		return o.Bytes()

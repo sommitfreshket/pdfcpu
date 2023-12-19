@@ -22,8 +22,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/pdfcpu/pdfcpu/pkg/log"
 	"github.com/pkg/errors"
+	"github.com/sommitfreshket/pdfcpu/pkg/log"
 )
 
 // Dict represents a PDF dict object.
@@ -561,7 +561,7 @@ func (d Dict) StringEntryBytes(key string) ([]byte, error) {
 
 	s := d.StringLiteralEntry(key)
 	if s != nil {
-		bb, err := Unescape(s.Value(), false)
+		bb, err := Unescape(s.Value())
 		if err != nil {
 			return nil, err
 		}

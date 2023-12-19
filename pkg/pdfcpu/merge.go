@@ -19,10 +19,10 @@ package pdfcpu
 import (
 	"fmt"
 
-	"github.com/pdfcpu/pdfcpu/pkg/log"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/model"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/types"
 	"github.com/pkg/errors"
+	"github.com/sommitfreshket/pdfcpu/pkg/log"
+	"github.com/sommitfreshket/pdfcpu/pkg/pdfcpu/model"
+	"github.com/sommitfreshket/pdfcpu/pkg/pdfcpu/types"
 )
 
 func EnsureOutlines(ctx *model.Context, fName string, append bool) error {

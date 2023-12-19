@@ -19,8 +19,8 @@ package model
 import (
 	"strings"
 
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/types"
 	"github.com/pkg/errors"
+	"github.com/sommitfreshket/pdfcpu/pkg/pdfcpu/types"
 )
 
 func (xRefTable *XRefTable) indRefToObject(ir *types.IndirectRef) (types.Object, error) {
@@ -377,7 +377,7 @@ func (xRefTable *XRefTable) DereferenceStringEntryBytes(d types.Dict, key string
 
 	switch o := o.(type) {
 	case types.StringLiteral:
-		bb, err := types.Unescape(o.Value(), false)
+		bb, err := types.Unescape(o.Value())
 		if err != nil {
 			return nil, err
 		}

@@ -30,13 +30,13 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/pdfcpu/pdfcpu/pkg/api"
-	"github.com/pdfcpu/pdfcpu/pkg/cli"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/model"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/types"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/validate"
 	"github.com/pkg/errors"
+	"github.com/sommitfreshket/pdfcpu/pkg/api"
+	"github.com/sommitfreshket/pdfcpu/pkg/cli"
+	"github.com/sommitfreshket/pdfcpu/pkg/pdfcpu"
+	"github.com/sommitfreshket/pdfcpu/pkg/pdfcpu/model"
+	"github.com/sommitfreshket/pdfcpu/pkg/pdfcpu/types"
+	"github.com/sommitfreshket/pdfcpu/pkg/pdfcpu/validate"
 )
 
 var errInvalidBookletID = errors.New("pdfcpu: booklet: n: one of 2, 4")

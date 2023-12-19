@@ -28,11 +28,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/pdfcpu/pdfcpu/pkg/filter"
-	"github.com/pdfcpu/pdfcpu/pkg/log"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/scan"
-	"github.com/pdfcpu/pdfcpu/pkg/pdfcpu/types"
 	"github.com/pkg/errors"
+	"github.com/sommitfreshket/pdfcpu/pkg/filter"
+	"github.com/sommitfreshket/pdfcpu/pkg/log"
+	"github.com/sommitfreshket/pdfcpu/pkg/pdfcpu/scan"
+	"github.com/sommitfreshket/pdfcpu/pkg/pdfcpu/types"
 )
 
 var ErrNoContent = errors.New("pdfcpu: page without content")
@@ -1563,7 +1563,7 @@ func (xRefTable *XRefTable) IDFirstElement() (id []byte, err error) {
 		return nil, errors.New("pdfcpu: ID must contain hex literals or string literals")
 	}
 
-	bb, err := types.Unescape(sl.Value(), false)
+	bb, err := types.Unescape(sl.Value())
 	if err != nil {
 		return nil, err
 	}
